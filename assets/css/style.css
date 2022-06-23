@@ -115,7 +115,6 @@ header nav ul li {
     flex-wrap: wrap;
     align-items: flex-start;
     padding-left: 60px;
-    border-left: 1px solid var(--cyan);
      }
 
      #me-img {
@@ -127,7 +126,6 @@ header nav ul li {
     flex: 1 70%;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-left: 1px solid var(--cyan);
     padding-left: 60px;
      }
 
