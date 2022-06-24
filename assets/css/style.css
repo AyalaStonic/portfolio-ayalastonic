@@ -73,11 +73,17 @@ header nav ul li {
     /* about-me Section */
 
     .container h2 {
-        color: rgb(206, 220, 220);
-        font-size: 38px;
-        font-family: Georgia, 'Times New Roman', Times, serif   ;
+            color:rgb(165, 109, 35);
+            font-size: 130px;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: right;
+            padding-top: 30px;
+            flex: 1 30%;
+            padding-right: 60px;
+            margin: 0%;
         
     }
+
 
     .aboutme p {
         color: antiquewhite;
@@ -85,27 +91,28 @@ header nav ul li {
         line-height: 1.5;
         margin-bottom: 20px;
         font-size: 20px;
-        padding-top: 20%;
+        padding-top: 7%;
     }
 
 
     #me_img img {
     max-width: 200px;
     height: auto;
-    float: left;
+    float: center;
     border-radius: 40%;
-    margin: 20px 20px 0 0;
+    margin: 20px 800px 0 0;
     flex: 2 0 0;
     filter: saturate(1); }
+    
 
-    .container h2 {
+    .aboutme h2 {
         color: rgb(206, 220, 220);
         font-size: 36px;
-        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: lighter;
-        padding-top: 30px;
-        padding-right: 60px;
+        text-align: left;
         flex: 1 30%;
+        padding-right: 60px;
     }
 
     
@@ -121,59 +128,84 @@ header nav ul li {
     margin-left: 25px;
      }  
 
-     .img-container {
-    display: flex;
-    flex: 1 70%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 60px;
-     }
+     /* Portfolio Section */
 
-     .img-container .work {
-    flex: 1 100%;
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    margin-bottom: 10px;
-     }
+     .showcase h2 {
+        color: #faf9f9;
+        font-size: 36px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        text-align: right;
+        padding-top: 30px;
+        flex: 1 30%;
+        padding-right: 60px;
+    }
+    
+    .img-container {
+        display: flex;
+        flex: 1 70%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    
+    .img-container .firstwork {
+        flex: 1 100%;
+        position: relative;
+        display: inline-block;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .firstwork img {
+        max-width: 100%;
+        display: block;
+        opacity: 0.5;
+        transition: opacity 1s ease-in-out 0.2s;
+    }
+        
+    .firstwork img:hover {
+        opacity: 1;
+    }
 
-     .work img {
-    max-width: 100%;
-    display: block;
-    opacity: 1;
-    transition: opacity 1s ease-in-out 0.2s;
-     }
+    .firstwork a {
+        flex: 0 0 50%;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+    }
+    
+    .img-container .work {
+        flex: 1 50%;
+        position: relative;
+        display: inline-block;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .work img {
+        max-width: 100%;
+        display: block;
+        opacity: 1;
+        transition: opacity 1s ease-in-out 0.1s;
+
+    }
+
+    .work a {
+        flex: 0 0 50%;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+    }
+
+    .img-container .text {
+        position: absolute;
+       color: #faf9f9;
+    }
 
 
-     .work a {
-    flex: 0 0 50%;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-     }
 
-     .img-container .work {
-    flex: 1 50%;
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    margin-bottom: 10px;
-     }
-
-     .work img {
-    max-width: 100%;
-    display: block;
-    opacity: 0.5;
-    transition: opacity 1s ease-in-out 0.2s;
-    width: 600px; height: 250px;
-     }
-
-     .work a {
-    flex: 0 0 50%;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-     }
+     /* Contactme Section*/
 
 
      .contactme {
@@ -192,12 +224,6 @@ header nav ul li {
         text-align: left;
     }
     
-    .contactme img {
-        width: 30px;
-        height: 30px;
-        display: inline;
-        margin: 3px 20px 7px 0;
-    }
     
     .contactme a {
 
@@ -216,4 +242,16 @@ header nav ul li {
         padding-right: 60px;
     }
 
-     
+     /* footer */
+
+     footer {
+        padding: 36px;
+    }
+    
+    footer p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: lighter;
+        font-size: 19px;
+        text-align: center;
+        margin: 0;
+    }
